@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My $weetheart ❤</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: #d6336c;
+      font-size: 2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto 40px;
+      font-size: 1.2rem;
+      color: #444;
+      line-height: 1.6;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 90%;
+      padding-bottom: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Floating hearts */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff4d6d;
+      font-size: 20px;
+      animation: floatUp 8s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      30% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <!-- Random floating hearts -->
+    <div class="heart" style="left:10%; animation-delay:0s;">❤</div>
+    <div class="heart" style="left:30%; animation-delay:2s;">❤</div>
+    <div class="heart" style="left:50%; animation-delay:4s;">❤</div>
+    <div class="heart" style="left:70%; animation-delay:1s;">❤</div>
+    <div class="heart" style="left:90%; animation-delay:3s;">❤</div>
+  </div>
+
+  <h1>For My Didi ❤</h1>
+
+  <p>
+    Dear Didi, you are not just my sister but also my best friend, my guide,
+    and my biggest supporter. These pictures remind me of all the beautiful
+    moments we’ve shared, and I’m truly blessed to have you in my life.  
+    This page is just a small gift for you, filled with love and memories💖. 
+    Nito unna every second naku special. I am little a stupid kind of person do ignore that behaviour. 
+    Thanks for always ignoring my mistakes and accepting me. Keep smiling Didi, 
+    your every smile brightens this world. I am always there for you no matter what. 
+    Let's nourish our bond with love, trust and a belief that we will never leave each other. 
+    And haan… don’t judge my webpage 😅 I took little help from GPT too.
+  </p>
+
+  <div class="gallery">
+    <img src="https://i.ibb.co/8nfq1nTw/11.jpg" alt="11">
+    <img src="https://i.ibb.co/Zz9J8rmp/22.jpg" alt="22">
+    <img src="https://i.ibb.co/bMbq20NP/33.jpg" alt="33">
+    <img src="https://i.ibb.co/Hf99b8wH/44.jpg" alt="44">
+    <img src="https://i.ibb.co/JFmz12Mm/55.jpg" alt="55">
+  </div>
+</body>
+</html>
